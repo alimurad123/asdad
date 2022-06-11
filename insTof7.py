@@ -39,9 +39,9 @@ print('''
 depend on vpn. Please use it before running the tool or providing a proxy file           
 ''')
 
-print ('''
+print (''')
 ==============================================
-[developer] => FaLaH - 0xfff0800 [developer_email] => flaaah777@gmail.com ) 
+[developer] => FaLaH - 0xfff0800 [developer_email] => (flaaah777@gmail.com )
 [developer_snapchat] => flaah999
 ==============================================
 ''')
@@ -91,7 +91,7 @@ class InstaBrute(object):
                 response = requests.get('https://api.ipify.org/?format=raw', proxies={"http": proxy, "https": proxy},
                                         timeout=10.0).text
                 if re.match(r'((?:\d{1,3}\.){3}\d{1,3})', response) != None:
-                    print(whiteB_color + '[*] Your public ip: %s' % response)
+                    print(whiteB_color + '[*] Y2.50.244.152: %s' % response)
                     print('')
                     break
                 else:
@@ -153,10 +153,10 @@ class InstaBrute(object):
                     exit()
             elif 'status' in r.text:
                 print (red_color + 'username: '+ user + ' | '' password: '+ pwd )
-                print(r.text)
+                print(r.text)    
 
 
-  
+
 
 
 
